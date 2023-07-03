@@ -7,6 +7,9 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+img {
+  width: 50%;
+}
 
 /**************************** 
       LAYOUT   
@@ -100,6 +103,34 @@ body {
 .card > h2 {
   color: #0084fd;
 }
+
+/* SEZIONE STRATEGIC */
+#strategic {
+  background-color: #9792e4;
+}
+#strategic .container {
+  display: flex;
+
+  text-align: center;
+  padding: 1rem;
+}
+.col-1 {
+  padding: 50px 25px;
+  color: white;
+}
+.col-1 > h2 {
+  margin-bottom: 55px;
+}
+.col-2 {
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px 25px;
+}
+#arrow {
+  background-color: #9792e4;
+  border-radius: 100%;
+  padding: 8px 10px;
+}
 /**************************** 
        RESPONSIVE 
 *****************************/
@@ -125,5 +156,13 @@ body {
   }
   .menu-bars {
     display: none;
+  }
+  .col-1,
+  .col-2 {
+    width: 50%;
+  }
+
+  .row {
+    display: flex;
   }
 }
