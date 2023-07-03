@@ -5,13 +5,14 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /**************************** 
       LAYOUT   
 *****************************/
 .debug {
-  border: 2px solid red;
+  border: 2px dotted black;
 }
 
 .container {
@@ -57,12 +58,56 @@ body {
 .menu-bars {
   font-size: 2rem;
 }
+
+/* SEZIONE INTRO */
+
+#intro .card {
+  background-color: #b5ddff;
+  padding: 1rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  padding-bottom: 0;
+}
+.row {
+}
+.col {
+  padding: 1rem;
+}
+#apple {
+  background-color: #0084fd;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 35px;
+  margin: 0 5px;
+}
+.apple-logo {
+  margin-right: 10px;
+}
+#phone {
+  width: 100%;
+}
+.card > h2 {
+  color: #0084fd;
+}
 /**************************** 
        RESPONSIVE 
 *****************************/
 
 /* TABLET */
 @media screen and (min-width: 768px) {
+  #intro .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #intro .col {
+    width: calc(100% / 3);
+  }
+}
+#intro .col:first-child {
+  width: calc(100% / 3 * 2);
 }
 
 /* DESTOP */
