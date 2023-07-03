@@ -1,0 +1,76 @@
+/**************************** 
+        CLASSI RESET    
+*****************************/
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/**************************** 
+      LAYOUT   
+*****************************/
+.debug {
+  border: 2px solid red;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+/**************************** 
+      SECTION    
+*****************************/
+
+/* HEADER */
+#header {
+  background-color: #0084fd;
+  min-height: 50px;
+}
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.menu-list {
+  display: flex;
+}
+.menu {
+  display: none;
+}
+.menu-list > li {
+  list-style: none;
+  margin: 0 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+#menu-button {
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
+.menu-bars {
+  font-size: 2rem;
+}
+/**************************** 
+       RESPONSIVE 
+*****************************/
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+}
+
+/* DESTOP */
+@media screen and (min-width: 992px) {
+  .menu {
+    display: block;
+  }
+  .menu-bars {
+    display: none;
+  }
+}
