@@ -11,9 +11,10 @@ body {
 /**************************** 
       LAYOUT   
 *****************************/
-.debug {
+/* .debug {
   border: 2px dotted black;
-}
+  border-style: inset;
+} */
 
 .container {
   margin-left: auto;
@@ -60,22 +61,29 @@ body {
 }
 
 /* SEZIONE INTRO */
+#intro {
+  /* margin: 80px ; */
+}
 
 #intro .card {
   background-color: #b5ddff;
-  padding: 1rem;
+
   flex-direction: column;
   display: flex;
   align-items: center;
   text-align: center;
+
   border-radius: 20px;
   padding-bottom: 0;
 }
 .row {
+  margin: 25px 0;
 }
+
 .col {
-  padding: 1rem;
+  padding: 20px 20px;
 }
+
 #apple {
   background-color: #0084fd;
   border-radius: 5px;
@@ -103,11 +111,11 @@ body {
     flex-wrap: wrap;
   }
   #intro .col {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 40px);
   }
-}
-#intro .col:first-child {
-  width: calc(100% / 3 * 2);
+  #intro .col:first-child {
+    width: calc(100% / 3 * 2 - 40px);
+  }
 }
 
 /* DESTOP */
